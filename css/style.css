@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -11,7 +14,9 @@
 
 body{
    background-color: #1e1d2b; 
+   color: white;
 }
+
 .bg-dark {
     background-color: #1e1d2b !important;
   }
@@ -31,6 +36,7 @@ body{
 .nav-link{
     padding: 0;
     color: white;
+    text-align: center;
 }
 
 .navbar-nav{
@@ -57,7 +63,76 @@ body{
     color: var(--OrangeGeneral);
 }
 
-@media (max-width:990px) {
+.page-home{
+    height: 100vh;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-title{
+    font-size: 50px;
+    color: var(--OrangeGeneral);
+}
+
+.home-info{
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.botones-dentro{
+    height: 30px;
+    width: 120px;
+    border: none;
+    background-color: var(--OrangeGeneral);
+    color: white;
+}
+
+.botones-dentro:hover{
+    background-color: white;
+    color: var(--OrangeGeneral);
+}
+
+.about-us{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title{
+    color: var(--OrangeGeneral);
+}
+
+.about-sub-title{
+    width: 250px;
+    text-align: left;
+}
+
+.about-us-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.about-info{
+    width: 293px;
+}
+
+
+
+
+
+@media (max-width:999px) {
+    .page-home{
+        height: 80vh;
+    }
+}
+
+@media (max-width:766px) {
     .navbar-collapse{
         background-color: #2c2b47; 
     }
@@ -79,5 +154,19 @@ body{
     
     .navbar-toggler{
         margin-right: 10px;
+    }
+
+    .page-home{
+        display: inline;
+        height: 80vh;
+    }
+
+    .about-us-info{
+        align-items:center;
+        text-align: center;
+    }
+
+    .about-sub-title{
+        text-align: center;
     }
 }
