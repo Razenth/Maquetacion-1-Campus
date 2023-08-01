@@ -127,10 +127,15 @@ body{
     width: 293px;
 }
 
+.food-title{
+    color: var(--OrangeGeneral);
+}
+
 .food-menu{
     border: 1px solid red;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .food-menu h3{
@@ -176,11 +181,53 @@ body{
 }
 
 .tarjeta:hover{
-    
+    filter: blur(2px);
 }
 
+/* SERVICES PART */
 
+.services-menu{
+    border: 1px solid ;
+    gap: 50px;
+}
 
+.services-title{
+    color: var(--OrangeGeneral);
+    font-size: 17px;
+}
+
+.services-info{
+    border: 1px solid var(--OrangeGeneral);
+    font-size: 40px;
+}
+
+.image-service{
+    width: 250px;
+    border: 1px solid red;
+}
+
+.info-tarjeta-services{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-tarjeta-services span:first-child{
+    color: var(--OrangeGeneral);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.fila-tarjetas-info{
+    border: 1px solid green;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.subtitle-tarjeta-services{
+    width: 220px;
+    border: 1px solid yellow;
+    align-self: center;
+}
 
 
 
