@@ -7,9 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+    }
+
 :root{
     --BlueBody:#1e1d2b;
     --OrangeGeneral:#ff702a;
+    --RositaFresita: #ffefe8;
 }
 
 body{
@@ -96,7 +101,7 @@ body{
 
 .about-us{
     height: 100vh;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
@@ -122,13 +127,71 @@ body{
     width: 293px;
 }
 
+.food-menu{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-menu h3{
+    font-size: 17px;
+}
+
+.food-info{
+    border: 1px solid green;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.fila-tarjetas{
+    border: 1px solid yellow;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tarjeta{
+    width: 350px;
+    background-color: var(--RositaFresita);
+    color: black;
+    font-weight:500;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.info-tarjeta{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-tarjeta{
+    margin-bottom: 8px;
+}
+
+.tarjeta span:last-child{
+    color: var(--OrangeGeneral);
+}
+
+.tarjeta:hover{
+    
+}
 
 
 
 
-@media (max-width:999px) {
+
+
+@media (max-width:1000px) {
     .page-home{
-        height: 80vh;
+        height: 75vh;
+    }
+
+    .about-us{
+        height: 50vh;
+
     }
 }
 
@@ -157,8 +220,8 @@ body{
     }
 
     .page-home{
-        display: inline;
-        height: 80vh;
+        display: inline-block;
+        height: 100vh;
     }
 
     .about-us-info{
@@ -168,5 +231,13 @@ body{
 
     .about-sub-title{
         text-align: center;
+    }
+
+    .about-us{
+        height: 110vh;
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        margin-bottom: 15px;
     }
 }
