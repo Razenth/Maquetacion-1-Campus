@@ -70,7 +70,6 @@ body{
 
 .page-home{
     height: 100vh;
-    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +118,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 25px;
     text-align: left;
 }
 
@@ -184,7 +182,6 @@ body{
 /* SERVICES PART */
 
 .services-menu{
-    gap: 50px;
     margin-top: 50px;
 }
 
@@ -229,7 +226,7 @@ body{
     color: black;
     margin-top: 15%;
     width: 100%;
-    height: 20vh;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,13 +251,137 @@ body{
     border: none;
     background-color: var(--OrangeGeneral);
     color: white;
-    width: 55%;
+    width: 65%;
     height: 30px;
     border-radius: 2px;
 }
 
+.mid-info button:hover{
+    background-color: var(--RositaFresita);
+    color: var(--OrangeGeneral);
+    border: 1px solid var(--OrangeGeneral);
+}
+/*  PART FOOTER  */
+
+.footer{
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(3, 1fr), auto;
+}
+
+.part1,.part2,.part3,.part4{
+    width: 85%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.hr{
+    width: 20%;
+    margin: 5px 0 10px 0;
+    border: 1px solid var(--OrangeGeneral);
+    color: var(--OrangeGeneral);
+}
+
+.part1 h1,.part2 h1,.part3 h1,.part4 h1{
+    font-size: 18px;
+    margin: 0;
+}
+
+.lista-footer{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.part1{
+    grid-row: 1;
+}
+.part2{
+    grid-row: 2;
+}
+.part3{
+    grid-row: 3;
+}
+.part4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-row: 4;
+    margin-bottom: 10px;
+}
+.part4-hr div{
+    width: 50%;
+}
+
+.conteiner-bolitas{
+    gap: 5px;
+    display: flex;
+}
+
+.bolitas{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--OrangeGeneral);
+}
 
 
+@media (max-width:1540px){
+
+    .home-info{
+        text-align: left;
+        width: 45%;
+    }
+    .home-info h2{
+        font-size: 70px;
+    }
+
+    .about-us-info{
+        justify-content: center;
+    }
+
+    .about-sub-title{
+        width: 90%;
+        font-size: 50px;
+    }
+    
+    .fila-tarjetas-info{
+        gap: 8%;
+    }
+
+    .subtitle-tarjeta-services{
+        width: 91%;
+    }
+
+    .mid-footer{
+        margin: 10% 0;
+        height: 250px;
+    }
+
+    .mid-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align:center;
+    }
+    .mid-info h4{
+        width: 70%;
+        font-size: 45px;
+    }
+
+    .mid-info button{
+        width: 25%;
+    }
+
+    .footer{
+        grid-template-rows: 1fr;
+        margin-bottom: 10px;
+    }
+
+    .part1,.part2,.part3,.part4{
+        grid-row: 1;
+    }
+}
 
 
 @media (max-width:1000px) {
@@ -269,12 +390,22 @@ body{
     }
 
     .about-us{
-        height: 50vh;
-
+        height: 85vh;
     }
+
+    .about-img{
+        height: 400px;
+        align-self: center;
+    }
+
+
 }
 
 @media (max-width:766px) {
+    .home-info{
+        width: 100%;
+        text-align: center;
+    }
     .navbar-collapse{
         background-color: #2c2b47; 
     }
@@ -300,7 +431,7 @@ body{
 
     .page-home{
         display: inline-block;
-        height: 75vh;
+        height: 110vh;
     }
 
     .about-us-info{
@@ -310,6 +441,7 @@ body{
 
     .about-sub-title{
         text-align: center;
+        font-size: 25px;
     }
 
     .about-us{
@@ -317,5 +449,85 @@ body{
         display: flex;
         align-items: center;
         margin-bottom: 15px;
+    }
+
+    .mid-info h4{
+        font-size: 30px;
+    }
+
+    .mid-info button{
+        width: 60%;
+    }
+
+    .footer{
+        margin-top: 30px;
+        display: grid;
+        justify-items: center;
+        grid-template-rows: repeat(3, 1fr), auto;
+    }
+    
+    .part1,.part2,.part3,.part4{
+        width: 85%;
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .hr{
+        width: 20%;
+        margin: 5px 0 10px 0;
+        border: 1px solid var(--OrangeGeneral);
+        color: var(--OrangeGeneral);
+    }
+    
+    .part1 h1,.part2 h1,.part3 h1,.part4 h1{
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    .lista-footer{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .part1{
+        grid-row: 1;
+    }
+    .part2{
+        grid-row: 2;
+    }
+    .part3{
+        grid-row: 3;
+    }
+    .part4{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-row: 4;
+        margin-bottom: 10px;
+    }
+    .part4-hr div{
+        width: 50%;
+    }
+    
+    .conteiner-bolitas{
+        gap: 5px;
+        display: flex;
+    }
+    
+    .bolitas{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--OrangeGeneral);
+    }
+}
+
+@media (max-width:425px) {
+    .page-home{
+        height: 110vh;
+    }
+
+    .mid-info h4{
+        font-size: 20px;
     }
 }
